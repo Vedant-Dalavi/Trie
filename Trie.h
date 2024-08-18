@@ -6,7 +6,7 @@
 #include <string>
 #include <vector>
 
-const int ALPHABET_SIZE = 26; // Assuming lowercase English letters
+const int ALPHABET_SIZE = 256; // Assuming lowercase English letters
 
 struct TrieNode
 {
