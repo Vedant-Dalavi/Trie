@@ -19,12 +19,13 @@ int main()
     cout << endl;
 
     // 1: found, 0: not found
-    cout << "Search for 'dalavi': " << t.search("dalavi") << endl;
+    bool found = t.search("vedant");
+    if (found) {
+    cout << "Word found!" << std::endl;
+    } else {
+    cout << "Word not found!" << std::endl;
+    }
 
-    cout << "Search for 'vedant': " << t.search("vedant") << endl;
-
-    cout << "Search for 'ved': " << t.search("ved") << endl;
-    // returns false
     t.showSuggestionsFor("#");
 
     t.deleteWord("vedant");
